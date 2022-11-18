@@ -1,0 +1,9 @@
+@import "bootstrap/scss/bootstrap";
+
+line::after {
+    content : "";
+    display:block;
+    height:1px;
+    background-color:rgba(74, 74, 74,.5);
+    margin-bottom:2vh;
+}
