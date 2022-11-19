@@ -35,8 +35,8 @@ class MovieItem extends HTMLElement{
             </div>
         `
         const modalContent = document.getElementById("modal-content");
-        this.querySelector("#detailMovie").addEventListener("click",  async function(){
-            const movieSelected = await App.searchMovieById(this.getAttribute("data-id"))
+        this.querySelector("#detailMovie").addEventListener("click",  async(e)=>{
+            const movieSelected = await App.searchMovieById(e.target.getAttribute("data-id"))
             modalContent.innerHTML = `
             <div class="modal-content ">
                 <div class="modal-header">
